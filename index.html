@@ -1,25 +1,586 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trueman</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.css">
+    <script src="owl.carousel.js"></script>
+    <script src="owl.carousel.min.js"></script>
 
 </head>
-<body>
 
-    <ul class="nav bg-dark p-2">
-        <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#">Active</a>
-        </li>
-       
-        <li style="" class="nav-item align-content-end">
-            <a class="nav-link active " aria-current="page" href="#"><button>Buy Now</button></a>
-            <h1 class="">hello</h1>
-        </li>
-      </ul>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: white;">
+        <div class="container-fluid d-flex " style="box-shadow: 1px 1px 3px 1px rgb(19, 15, 9);">
+
+            <a class="navbar-brand" href="#">
+                <i><b style="color: black;" class="ms-5">RAHUL </b><b style="color: rgb(232, 11, 29);">YOGI</b></i>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <ul class="navbar-nav  mb-2 mb-lg-0 gap-5 ">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <h6>HOME</h6>
+                                </button>
+
+                                <div class="dropdown-content">
+                                    <a href="#">IMAGE</a>
+                                    <a href="#">VIDEO</a>
+                                    <a href="#">SLIDESGOW</a>
+                                    <a href="#">OPNEPAGE IMAGE</a>
+                                    <a href="#">OPNEPAGE VIDEO</a>
+                                    <a href="#">OPNEPAGE SLIDESHOW</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                    <h6>PORTFOLIO </h6>
+                                </button>
+
+                                <div class="dropdown-content">
+                                    <a href="#">PORTFOLIO 1</a>
+                                    <a href="#">PORTFOLIO 2</a>
+                                    <a href="#">PORTFOLIO 3</a>
+                                    <a href="#">PORTFOLIO 4</a>
+                                    <a href="#">PORTFOLIO 5</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button class="dropbtn">
+                                <h6 style="margin-top: 19px;">RESUME </h6>
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button class="dropbtn">
+                                <h6 style="margin-top: 19px;">CONTACT </h6>
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <div class="dropdown">  
+                                <button class="dropbtn">
+                                    <h6>BLOG</h6>
+                                </button>
+
+                                <div class="dropdown-content">
+                                    <a href="#">BLOG 1</a>
+                                    <a href="#">BLOG 2</a>
+                                    <a href="#">PUBLICATION</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button
+                                style="width: 200px;border-radius: 20px;margin-top: 10px; background-color: #ffac2f;border: none;padding: 8PX;"
+                                type="button" class="" onclick="downloadCV()"><b><i>DOWNLOAD CV <i class="bi bi-arrow-bar-down"></i></i></b></button>
+
+                                
+
+                                <script>
+                                    function downloadCV() {
+                                        const link = document.createElement('a');
+                                        link.href = 'file:///C:/Users/sanju/Downloads/Orange%20Black%20and%20White%20Corporate%20Graphic%20Designer%20Resume%20A4%20(1).pdf'; // यहाँ पर अपने CV का सही पाथ डालें
+                                        link.download = 'sanju'; // यहाँ पर अपने CV का नाम डालें
+                                        document.body.appendChild(link);
+                                        link.click();
+                                        document.body.removeChild(link);
+                                    }
+                                </script>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="bg-img">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 col-md-4">
+                    <div style="height: 500px;" class="card mt-5 w-25  align-items-center position-fixed drad">
+                        <hr>
+                        <img class=""
+                        style="border-radius: 100%; height: 100px;width: 100px;"
+                        src="card logo.jpg"
+                        alt="">
+                        <hr>
+                        <b class="text-dark">RAHUL <b class="text-danger">YOGI</b></b>
+                        <hr>
+                        <p class="typed" style="color: rgb(43, 37, 30);"><i>I'M FRONTEND DESIGNER</i></p>
+                        <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+
+                        <div class="row hover g-5">
+                            <div class="col-2"></div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"> <i class="bi bi-linkedin"></i> </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">  <i class="bi bi-dribbble"></i> </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"> <i class="bi bi-behance"></i> </div>
+                            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"><i class="bi bi-twitter"></i></div>
+                            <div class="col-2"></div>
+
+                        </div>
+                        <div class="trm-divider trm-mb-40 trm-mt-40"></div>
+
+                        <div class=" col-md-8">
+                        </div>
     
+                        <div class="col-md-12 ">
+                            <div class="row font">
+                                <div class=" col-md-2 "></div>
+                                <div class=" col-md-4"><span>RESIDENCE :</span></div>
+                                <div class=" col-md-2"></div>
+                                <div class=" col-md-4">RAHUL</div>
+                                <div class=" col-md-2"></div>
+                                <div class=" col-md-4 mt-3"><span>CITY :</span></div>
+                                <div class=" col-md-2 "></div>
+                                <div class=" col-md-4 mt-3">JAIPUR</div>
+                                <div class=" col-md-2 "></div>
+                                <div class=" col-md-4 mt-3"><span>AGE :</span></div>
+                                <div class=" col-md-2  "></div>
+                                <div class=" col-md-4 mt-3">20</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="color: white;margin-top: 80px;" class="col-12 col-md-6">
+                    <span><b>HI MY NEW FRIEND!</b></span>
+                    <h1 class="font mt-3" style="font-size: 60px;"><b>Discover my <br>art space!</b></h1>
+                    <button class="btnfree"style="height: 35px; border: 1px solid currentColor; color: rgb(255, 255, 255); box-sizing: border-box; border-radius: 999px;margin-top: 50px;"
+                        type="button" class="btnfree w-50 mt-5 ms-4"><b>VIDEO RESUME <i class="bi bi-play-fill"></i></b>
+                    </button>
+                </div>
+                <div class="col-12 col-md-2"> </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <main> -->
+    <div class="container" style="margin-top: -30px;">
+        <div class="row">
+            <div class="col-12 col-md-4 "></div>
+            <div class="col-12 col-md-8 ">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card text-center p-4">
+                            <h6> 74+</h6>
+                            <hr>
+                            <b> COMPLETED <br> PROJECTS</b>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 col-md-4">
+                        <div class="card text-center p-4">
+                            <h6> 50+</h6>
+                            <hr>
+                            <b> HAPPY <br> CUSTOMERS</b>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-12 col-md-4">
+                        <div class="card text-center p-4">
+                            <h6> 14+</h6>
+                            <hr>
+                            <b> HONORS AND <br>AWARDS</b>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </main> -->
+
+
+    <!-- <main> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 "></div>
+            <div class="col-12 col-md-8 mt-3">
+                <b> My story</b>
+                <hr class="border01">
+            </div>
+        </div>
+    </div>
+    <!-- </main> -->
+
+    <!-- <main> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 "></div>
+            <div class="col-12 col-md-8 mt-3">
+                <div class="card p-5">
+                    <b> Consectetur adipisicing elit. Rem minima maiores, praesentium, aperiam <br> eveniet tenetur consequatur beatae id est.</b>
+                </div>
+            </div>
+        </div>
+        <!-- </main> -->
+
+        <!-- <main> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 "></div>
+                <div class="col-12 col-md-8 mt-3">
+                    <b> Video resume</b>
+                    <hr class="border01">
+                </div>
+            </div>
+        </div>
+        <!-- </main> -->
+
+        <!-- <main> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 "></div>
+                <div class="col-12 col-md-8 mt-3">
+                    <img src="https://trueman-react.vercel.app/img/video.jpg" alt="" width="100%">
+                </div>
+            </div>
+            <!-- </main> -->
+
+            <!-- <main> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 "></div>
+                    <div class="col-12 col-md-8 mt-3">
+                        <b>My Services</b>
+                        <hr class="hr">
+                    </div>
+                </div>
+            </div>
+            <!-- </main> -->
+
+            <!-- <main> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 "></div>
+                    <div class="col-12 col-md-4 mt-3">
+
+                        <div class="card p-4">
+                            <img src="https://trueman-react.vercel.app/img/icons/icon-1.svg" alt="" width="15%">
+                            <br>
+                            <b>Architecture</b>
+                            <br>
+                            <span>Dolor sit amet, consectetur adipisicing elit. Delectus esse commodi.</span>
+                            <br>
+                            <b class="text-warning">ORDER NOW </b>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-3">
+                        <div class="card p-4">
+                            <img src="https://trueman-react.vercel.app/img/icons/icon-2.svg" alt="" width="15%">
+                            <br>
+                            <b>UI/UX Design</b>
+                            <br>
+                            <span>Dolor sit amet, consectetur adipisicing elit. Delectus esse commodi.</span>
+                            <br>
+                            <b class="text-warning">ORDER NOW </b>
+                        </div>
+                    </div>
+                    <!-- </main> -->
+
+                    <!-- <main> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-4 "></div>
+                            <div class="col-12 col-md-4 mt-3">
+                                <div class="card p-4">
+                                    <img src="https://trueman-react.vercel.app/img/icons/icon-3.svg" alt="" width="15%">
+                                    <br>
+                                    <b>Interior Design</b>
+                                    <br>
+                                    <span>Dolor sit amet, consectetur adipisicing elit. Delectus esse commodi.</span>
+                                    <br>
+                                    <b class="text-warning">ORDER NOW </b>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mt-3">
+                                <div class="card p-4">
+                                    <img src="https://trueman-react.vercel.app/img/icons/icon-3.svg" alt="" width="15%">
+                                    <br>
+                                    <b>Game design</b>
+                                    <br>
+                                    <span>Dolor sit amet, consectetur adipisicing elit. Delectus esse commodi.</span>
+                                    <br>
+                                    <b class="text-warning">ORDER NOW </b>
+                                </div>
+                            </div>
+                            <!-- </main> -->
+
+                            <!-- <main> -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 "></div>
+                                    <div class="col-12 col-md-8 mt-3">
+                                        <b> Price plans</b>
+                                        <hr class="border01">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </main> -->
+
+                            <!-- <main> -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 "></div>
+                                    <div class="col-12 col-md-4 mt-3">
+                                        <div class="card text-center p-4">
+                                            <b> Hourly Payment</b>
+                                            <br>
+                                            <b>$29h</b>
+                                            <p>AMET LOREM.</p>
+                                            <p>DOLOR IPSUM</p>
+                                            <p> SIT AMET</p>
+                                            <del> LOREM DOLOR</del>
+                                            <br>
+                                            <del>ORDER NOW</del>
+                                            <br>
+                                            <button class="rounded-3"
+                                                style="border: 20px;border: none; color: white;background-color: rgb(182, 241, 43);padding: 10px;">ORDER
+                                                NOW</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mt-3">
+                                        <div class="card text-center p-4">
+                                            <b> Hourly Payment</b>
+                                            <br>
+                                            <b>$29h</b>
+                                            <p>AMET LOREM.</p>
+                                            <p>DOLOR IPSUM</p>
+                                            <p> SIT AMET</p>
+                                            <del> LOREM DOLOR</del>
+                                            <br>
+                                            <del>ORDER NOW</del>
+                                            <br>
+                                            <button class="rounded-3"
+                                                style="border: 20px;border: none; color: white;background-color: rgb(182, 241, 43);padding: 10px;">ORDER
+                                                NOW </button>
+                                        </div>
+                                    </div>
+                                    <!-- </main> -->
+
+                                    <!-- <main> -->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 "></div>
+                                            <div class="col-12 col-md-8 mt-3">
+                                                <b> Testimonials</b>
+                                                <hr class="border01">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- </main> -->
+
+                                    <!-- <main> -->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 "></div>
+                                            <div class="col-12 col-md-8 mt-3">
+                                                <div class="owl-carousel owl-theme">
+                                                    <div class="card text-center p-4 align-items-center">
+                                                        <img class=""
+                                                            style="border-radius: 50%; height: 100px;width: 100px;"
+                                                            src="WhatsApp Image 2024-05-16 at 18.00.31_d5b6ba95.jpg"
+                                                            alt="">
+                                                        <br>
+                                                        <b class='text-dark'>RAHUL <b class="text-danger">YOGI</b> </b>
+                                                        <br>
+                                                        <i style="color: #afb42b;">Frontend Designer</i>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Molestias officia, debitis
+                                                            minus repellat saepe? Deleniti blanditiis optio inventore
+                                                            nulla dicta fugiat culpa quis
+                                                            unde, sequi debitis ex ab! Sapiente vitae rem tempore sunt!
+                                                            Aperiam eveniet mollitia,
+                                                            quae architecto nostrum.</p>
+                                                    </div>
+                                                    <div class="card text-center p-4 align-items-center">
+                                                        <img class=""
+                                                            style="border-radius: 50%; height: 100px;width: 100px;"
+                                                            src="	https://trueman-react.vercel.app/img/testimonials/2.jpg"
+                                                            alt="">
+                                                        <br>
+                                                        <b>Oscar Oldman</b>
+                                                        <br>
+                                                        <i style="color: #afb42b;">Photographer</i>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Molestias officia, debitis
+                                                            minus repellat saepe? Deleniti blanditiis optio inventore
+                                                            nulla dicta fugiat culpa quis
+                                                            unde, sequi debitis ex ab! Sapiente vitae rem tempore sunt!
+                                                            Aperiam eveniet mollitia,
+                                                            quae architecto nostrum.</p>
+                                                    </div>
+                                                    <div class="card text-center p-4 align-items-center">
+                                                        <img class=""
+                                                            style="border-radius: 50%; height: 100px;width: 100px;"
+                                                            src="	https://trueman-react.vercel.app/img/testimonials/3.jpg"
+                                                            alt="">
+                                                        <br>
+                                                        <b>Viktoria Newman</b>
+                                                        <br>
+                                                        <i style="color: #afb42b;">Model</i>
+                                                        <br>
+                                                        <p style="color: #9a9a9fd4;">Lorem ipsum dolor sit amet,
+                                                            consectetur adipisicing elit.
+                                                            Molestias officia, debitis minus repellat saepe? Deleniti
+                                                            blanditiis optio inventore
+                                                            nulla dicta fugiat culpa quis unde, sequi debitis ex ab!
+                                                            Sapiente vitae rem tempore
+                                                            sunt! Aperiam eveniet mollitia, quae architecto nostrum.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </main> -->
+
+                            <script>
+
+                                var owl = $('.owl-carousel');
+                                owl.owlCarousel({
+                                    items: 1,
+                                    loop: true,
+                                    margin: 10,
+                                    autoplayTimeout: 1000,
+                                    autoplayHoverPause: true
+                                });
+                                $('.play').on('click', function () {
+                                    owl.trigger('play.owl.autoplay', [1000])
+                                })
+                                $('.stop').on('click', function () {
+                                    owl.trigger('stop.owl.autoplay')
+                                })
+
+                            </script>
+
+                            <!-- <main> -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 "></div>
+                                    <div class="col-12 col-md-8 mt-3">
+                                        <b> Latest Publications</b>
+                                        <hr class="border01">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </main> -->
+
+                            <!-- <main> -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 "></div>
+                                    <div class="col-12 col-md-4 mt-3">
+                                        <div class="card w-100 h-100">
+                                            <div class="card zoomin">
+                                                <img src="https://trueman-react.vercel.app/img/blog/b1.jpg" alt=""
+                                                    width="100%" height="215px">
+                                            </div>
+                                            <div class="card p-4">
+                                                <p>LIFESTYLE</p>
+                                                <h5><b>Create your own beauty blog with Trueman</b></h2>
+                                                    <hr class="border01">
+                                                    <p>17 JULYS
+                                                        14:32
+                                                        EMMA T.
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mt-3">
+                                        <div class="card w-100 h-100">
+                                            <div class="card zoomin">
+                                                <img src="https://trueman-react.vercel.app/img/blog/b7.jpg" alt=""
+                                                    width="100%">
+                                            </div>
+                                            <div class="card p-4">
+                                                <p>LIFESTYLE</p>
+                                                <h5><b>Create your own beauty blog with Trueman</b></h2>
+                                                    <hr class="border01">
+                                                    <p>17 JULYS
+                                                        14:32
+                                                        EMMA T.
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- </main> -->
+
+                                    <!-- <main> -->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 "></div>
+                                            <div class="col-12 col-md-8 mt-3">
+                                                <hr style="border: dotted 1px black;" class="border01">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- </main> -->
+
+                                    <!-- <main> -->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 "></div>
+
+                                            <div class="col-12 col-md-8 mt-3 ">
+                                                <div class="card p-4">
+                                                    <div style="color: #9a9a9fd4;" class="row">
+                                                        <div class="col-12 col-md-6 text-dark"><small><b>© 2024 ALL
+                                                                    RIGHTS
+                                                                    RESERVED.</b></small></div>
+                                                        <div class="col-12 col-md-2 "> </div>
+                                                        <div class="col-12 col-md-4 text-dark"> <small><b>DEVELOPED BY:
+                                                                    <b class="text-danger"><i>RAHUL YOGI</i></b></b></small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- </main> -->
+                                    <br><br>
+
 </body>
+
 </html>
