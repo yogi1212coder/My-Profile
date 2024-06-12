@@ -5,7 +5,7 @@
 }
 
 .dropbtn:hover {
-  color: rgb(189, 220, 11);
+  color: rgb(235, 231, 39);
 }
 
 .dropdown {
@@ -82,7 +82,7 @@
   }
 
   50% {
-    width: 60%
+    width: 70%
   }
 
   100% {
@@ -103,7 +103,7 @@
 }
 
 .font{
-  font-size: 10px;
+  font-size: 15px;
   font: bold;
 }
 
@@ -126,7 +126,7 @@ p {
 }
 
 .trm-mt-40{
-  margin-top: 35px;
+  margin-top: 15px;
 }
 .trm-mb-40{
 margin-bottom: 40px;}
