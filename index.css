@@ -59,13 +59,47 @@
 }
 
 
-.hover i:hover{
+.hover i:hover {
   color: rgb(238, 178, 49);
 }
 
-.hover i{
+.hover i {
   font-size: 20px;
- 
+
+}
+
+.navbar {
+background-color: white;
+width: 100%;
+
+}
+
+.btntop h6{
+  margin-top: 19px;
+}
+
+.carhigh{
+  height: 520px;
+}
+
+.cardtop{
+  margin-top: -30px;
+}
+
+.cardimage{
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+
+}
+
+.nevbtn{
+  border-radius: 20px;
+  width: 200px;
+  margin-top: 10px;
+  border: none;
+  padding: 8px;
+  background-color: #ffac2f;
 }
 
 .typed {
@@ -91,18 +125,18 @@
 }
 
 @media (max-width: 480px) {
-  .btnfree{
+  .btnfree {
     font-size: 7px;
   }
 }
 
-.btnfree{
+.btnfree {
   color: white;
   background-color: rgba(255, 255, 255, 0);
 
 }
 
-.font{
+.font {
   font-size: 15px;
   font: bold;
 }
@@ -119,17 +153,19 @@ p {
   border-top: 1px dashed #000;
 }
 
-.trm-divider{
+.trm-divider {
   height: 1px;
   border-bottom: dotted 1px rgb(6, 6, 3);
   width: 100%;
 }
 
-.trm-mt-40{
+.trm-mt-40 {
   margin-top: 15px;
 }
-.trm-mb-40{
-margin-bottom: 40px;}
+
+.trm-mb-40 {
+  margin-bottom: 40px;
+}
 
 .border02 {
   height: 1px;
@@ -138,15 +174,17 @@ margin-bottom: 40px;}
   border: none;
 }
 
-.border03 {
-  height: 4px;
-  background-image: linear-gradient(90deg, transparent, transparent 50%, #fff 50%, #fff 100%), linear-gradient(90deg, #69d2e7, #a7dbd8, #e0e4cc, #f38630, #fa6900);
-  background-size: 20px 3px, 100% 3px;
+.rounded-3 {
+  border: 20px;
   border: none;
+   color: white;
+   background-color: rgb(182, 241, 43);
+  padding: 10px;
 }
 
+
 .zoomin {
- 
+
   overflow: hidden;
   margin: 0 auto;
 }
@@ -159,5 +197,6 @@ margin-bottom: 40px;}
   transform: scale(1.1);
 }
 
-
-
+.textcol{
+  color: #9a9a9fd4;
+}
